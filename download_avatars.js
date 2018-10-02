@@ -20,7 +20,7 @@ var query = options;
   request.get(query, function(err, res, body) {
   	if (!err && res.statusCode == 200 && repoOwner !== null && repoName !== null){
   		var data = JSON.parse(body);
-  		console.log(data);
+  		
     	cb(null, res, data);
     	//CB(data['avatar_url'], 'avatars/' + data['login'] + '.jpg')
 
