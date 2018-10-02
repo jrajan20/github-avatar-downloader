@@ -51,7 +51,7 @@ function downloadImageByURL(url, filePath, name) {
                               
          console.log('Response Status Code: ', response.statusCode, '\n', response.statusMessage, '\n', response.headers['content-type']);
        })
-       .pipe(fs.createWriteStream('./'+ name + '.jpg' ));
+       .pipe(fs.createWriteStream('./avatars/'+ name + '.jpg' ));
 }
 
 
